@@ -25,7 +25,7 @@ jobs:
           java-version: ${{ matrix.jdk }}
 
       - name: Grant execute permission to gradlew
-          run: chmod +x ./gradlew
+        run: chmod +x ./gradlew
 
       - name: Build with Gradle
         run: ./gradlew build
